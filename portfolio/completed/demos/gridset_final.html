@@ -7,46 +7,71 @@
 		
 		<!-- Viewport meta tag to prevent iPhone from scaling our page -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://get.gridsetapp.com/20396/" rel="stylesheet" />
+		<style type="text/css" media="all">
+	
+		@font-face {
+		    font-family: 'Roboto Condensed Light';
+		    src: url('../fonts/robotocondensed-light-webfont.eot');
+		    src: url('../fonts/robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('../fonts/robotocondensed-light-webfont.woff') format('woff'),
+		         url('../fonts/robotocondensed-light-webfont.ttf') format('truetype'),
+		         url('../fonts/robotocondensed-light-webfont.svg#RobotoCondensedLight') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+	
 		
-		<link rel="stylesheet" href="./css/bootstrap-responsive.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+			body {
+			  font-family: "Roboto Condensed Light", "Helvetica Neue", Helvetica, sans-serif;
+			}
+ 
+			h1 {
+				font-size: 3.189em;
+				line-height: 1.223;
+			  text-align: center;
+			  text-transform: uppercase;
+			}
+ 
+			h2 {
+				font-size: 2.126em;
+				line-height: 1.223;
+			  
+			}
+ 
+			p {
+				font-size: 1.063em; /* 17px / 16 = 1.063em */
+				line-height: 1.223; /* 1.3 / 1.063 = 1.223 */
+			  
+			}
+ 
+			img {
+			    max-width: 100%;
+			    vertical-align: middle;
+			    border: 0;
+			    -ms-interpolation-mode: bicubic;
+			}
 		
-		<!-- Normalize hide address bar for iOS and Android -->
-		<script src="./js/hideaddressbar.js"></script>
+			#nav {
+				background-color:pink;
+			}
+			
+			#header {
+				background-color:teal;
+			}
+			
+			#content {
+				background-color:orange;
+			}
+			
+		</style>
 		
-		<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
-		<script src="./js/respond.min.js"></script>
-		
-		<!-- Using picturefill to load conditional images and matchmedia to provide support for IE8 and below + older browsers -->
-		<script src="./js/picturefill.js"></script>
-		<script src="./js/matchmedia.js"></script>
-		
-		<!--[if lt IE 9]>
-		<script src="./js/html5.js"></script>
-		<![endif]-->
-		
-		<!--[if lt IE 9]>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-		<![endif]-->
-		
-		<!--[if IE 8]>
-		<script src="./js/checkbox.js"></script>
-		<![endif]-->
-		
-		<!--[if IE 6]>
-		<script src="./js/selectivizr-min.js"></script>
-		<![endif]-->
-
 	</head>
 
 	<body lang="en">
-		<div id="container-nav">
-			<section id="nav" class="group wrapper">
+		<div id="nav" class="m1 d1">
+			<section>
 				<h3>Maya Chopra</h3>
-		        <!-- Checkbox Hack markup -->
-		        <input type="checkbox" id="toggle" />
-		        <label for="toggle" onclick>Menu</label>
-		        <!-- /Checkbox Hack markup -->
 		        <nav>
 		            <ul>
 		                <li><a href="#portfolio">Portfolio</a></li>
@@ -59,18 +84,12 @@
 			
 			</section>
 		</div>
-		<div id="container-header">
-			<header id="masthead" class="wrapper">
+		<div id="header" class="m2 d2-d3">
+			<header >
 				<figure id="maya"> 
-				    <div data-picture data-alt="Maya Chopra">
-				        <div data-src="img/headshot-s.png"></div>
-				        <div data-src="img/headshot-m.png" data-media="(min-width: 45em)"></div>
-				        <div data-src="img/headshot-l.png" data-media="(min-width: 60em)"></div>
-				        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-				        <noscript>
-				            <img src="img/headshot-s.png" alt="Maya Chopra">
-				        </noscript>
-				    </div>
+				  
+				  <img src="img/headshot-s.png" alt="Maya Chopra">
+				     
 				</figure>
 				
 				<h1>Hi, I'm Maya</h1>
@@ -78,22 +97,22 @@
 				<h2>A Boston-based designer/developer hybrid with a passion for user experience and the web</h2>
 			</header>
 		</div>
-		<div id="container-content">
-			<article id="content">
+		<div id="content" class="m-all d-all">
+			<article >
 			
 			<!-- Classes removed / #portfolio -->
 			<!-- Element(s)/Classes added from Bootstrap's Scaffolding -->
 			
-				<section id="portfolio" class="container-fluid">
+				<section >
 				
                     <header>
                         <h3>My Portfolio</h3>
                         <p>Some of the things I've been working on lately</p>
                     </header>
                     
-                    <div class="row-fluid">
+                    <div>
                     
-                        <article class="span4">
+                        <article>
                             <h4>Vitamin T Homepage</h4>
                                 <a href="/work/vitamin-t/">
                                     <figure>
@@ -102,7 +121,7 @@
                                 </a>
                         </article>
 
-                        <article class="span4">
+                        <article>
                             <h4>RoboHead iPad App</h4>
                                 <a href="/work/robohead/">
                                     <figure>
@@ -111,7 +130,7 @@
                                 </a>
                         </article>
     
-                        <article class="span4">
+                        <article>
                             <h4>Shareist Homepage</h4>
                                 <a href="/work/shareist/">
                                     <figure>
@@ -122,9 +141,9 @@
                         
                         </div>
                         
-                        <div class="row-fluid">
+                        <div>
                         
-                        <article class="span4">
+                        <article>
                             <h4>Vitamin T Homepage</h4>
                                 <a href="/work/vitamin-t/">
                                     <figure>
@@ -133,7 +152,7 @@
                                 </a>
                         </article>
 
-                        <article class="span4">
+                        <article>
                             <h4>RoboHead iPad App</h4>
                                 <a href="/work/robohead/">
                                     <figure>
@@ -142,7 +161,7 @@
                                 </a>
                         </article>
     
-                        <article class="span4">
+                        <article>
                             <h4>Shareist Homepage</h4>
                                 <a href="/work/shareist/">
                                     <figure>
@@ -157,12 +176,12 @@
 				
 				<section id="resume" class="group">
 			
-						<header class="wrapper">
+						<header>
 							<h3>My Resume</h3>
 							<p>Current/previous positions and skill set</p>
 						</header>
-					<article class="wrapper">	
-					<div class="box">
+					<article>	
+					<div>
 						<h4>Currently</h4>
 
 						<h5>Designer/Developer</h5>
@@ -172,8 +191,8 @@
 						<p>Design and development for a two-person studio in Boston, MA. Clients include Boston Red Sox, Sam Adams and Aerosmith.</p>
 					</div>
 					</article>
-					<article class="wrapper">
-					<div class="box">
+					<article>
+					<div>
 						<h4>Previously</h4>
 
 						<h5>Lead UI Designer</h5>
@@ -183,8 +202,8 @@
 						<p>Lead designer and theme developer for AU's home-built CMS. Worked with several other groups at the university as well.</p>
 					</div>
 					</article>
-					<article class="wrapper">
-					<div class="box">
+					<article>
+					<div>
 						<h4>Skills</h4>
 
 						<ul>
@@ -195,7 +214,7 @@
 						</ul>
 					</div>
 					</article>
-						<footer class="wrapper">
+						<footer>
 							<p>For a full work history, have a look at my LinkedIn Profile</p>
 						</footer>
 			
@@ -203,30 +222,6 @@
 		
 			</article>
 		</div>
-		<div id="container-footer">
-			<form id="contact">
-			    <fieldset class="wrapper">
-			        <legend>Contact</legend>
-			            <ul class="group">
-			                <li class="name">
-			                    <label for="name">Your Name</label>
-			                    <input type="text" id="name" name="name" />
-			                </li>
-			                <li class="email">
-			                    <label for="email">Your Email</label>
-			                    <input type="email" id="email" name="email" />
-			                </li>
-			                <li class="message">
-			                    <label for="message">Say Hello</label>
-			                    <textarea id="message" name="message"></textarea>
-			                </li>
-			            </ul>
-			        <input class="send" type="submit" name="submit" value="Send" />
-			    </fieldset>
-			</form>           
-			<footer id="colophon" class="wrapper">
-				<p>©2013 all rights reserved. </p>
-			</footer>
-		</div>	
+		<script src="https://get.gridsetapp.com/20396/overlay/"></script>
 	</body>
 </html>

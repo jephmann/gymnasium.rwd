@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<title>Maya Chopra's portfolio</title>
+		
+		<!-- Viewport meta tag to prevent iPhone from scaling our page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/bootstrap-responsive.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		
+		<!-- Normalize hide address bar for iOS and Android -->
+		<script src="./js/hideaddressbar.js"></script>
+		
+		<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
+		<script src="./js/respond.min.js"></script>
+		
+		<!-- Using picturefill to load conditional images and matchmedia to provide support for IE8 and below + older browsers -->
+		<script src="./js/picturefill.js"></script>
+		<script src="./js/matchmedia.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script src="./js/html5.js"></script>
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+		<![endif]-->
+		
+		<!--[if IE 8]>
+		<script src="./js/checkbox.js"></script>
+		<![endif]-->
+		
+		<!--[if IE 6]>
+		<script src="./js/selectivizr-min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body lang="en">
+		<div id="container-nav">
+			<section id="nav" class="group wrapper">
+				<h3>Maya Chopra</h3>
+		        <!-- Checkbox Hack markup -->
+		        <input type="checkbox" id="toggle" />
+		        <label for="toggle" onclick>Menu</label>
+		        <!-- /Checkbox Hack markup -->
+		        <nav>
+		            <ul>
+		                <li><a href="#portfolio">Portfolio</a></li>
+		                <li><a href="#resume">Resume</a></li>
+		                <li><a href="./">LinkedIn Profile</a></li> <!-- No destination yet -->
+		                <li><a href="#contact">Contact</a></li>
+		            </ul>
+		        </nav>
+				
+			
+			</section>
+		</div>
+		<div id="container-header">
+			<header id="masthead" class="wrapper">
+				<figure id="maya"> 
+				    <div data-picture data-alt="Maya Chopra">
+				        <div data-src="img/headshot-s.png"></div>
+				        <div data-src="img/headshot-m.png" data-media="(min-width: 45em)"></div>
+				        <div data-src="img/headshot-l.png" data-media="(min-width: 60em)"></div>
+				        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+				        <noscript>
+				            <img src="img/headshot-s.png" alt="Maya Chopra">
+				        </noscript>
+				    </div>
+				</figure>
+				
+				<h1>Hi, I'm Maya</h1>
+
+				<h2>A Boston-based designer/developer hybrid with a passion for user experience and the web</h2>
+			</header>
+		</div>
+		<div id="container-content">
+			<article id="content">
+			
+				<section id="portfolio" class="container-fluid">
+				
+					<header >
+						<h3>My Portfolio</h3>
+						<p>Some of the things I've been working on lately</p>
+					</header>
+					<div class="row-fluid">
+					<article class="span4">
+					    <h4>Vitamin T Homepage</h4>
+					        <a href="/work/vitamin-t/">
+					            <figure>
+					                <img src="./img/vitamin-t.png" alt="Vitamin T" />	
+					            </figure>
+					        </a>
+					</article>
+					
+				<article class="span4">
+				<h4>RoboHead iPad App</h4>
+						<a href="/work/robohead/">
+							<figure>
+								<img src="./img/robohead.png" alt="Robohead" />
+							</figure>
+						</a>
+				</article>
+				<article class="span4">
+				<h4>Shareist Homepage</h4>
+						<a href="/work/shareist/">
+							<figure>
+								<img src="./img/shareist.png" alt="Shareist" />
+							</figure>
+						</a>
+				</article>
+			</div>
+			<div class="row-fluid">
+			<article class="span4">
+			    <h4>Vitamin T Homepage</h4>
+			        <a href="/work/vitamin-t/">
+			            <figure>
+			                <img src="./img/vitamin-t.png" alt="Vitamin T" />	
+			            </figure>
+			        </a>
+			</article>
+			
+		<article class="span4">
+		<h4>RoboHead iPad App</h4>
+				<a href="/work/robohead/">
+					<figure>
+						<img src="./img/robohead.png" alt="Robohead" />
+					</figure>
+				</a>
+		</article>
+		<article class="span4">
+		<h4>Shareist Homepage</h4>
+				<a href="/work/shareist/">
+					<figure>
+						<img src="./img/shareist.png" alt="Shareist" />
+					</figure>
+				</a>
+		</article>
+	</div>
+				</section>
+				
+			
+		<div id="container-footer">
+			
+			<footer id="colophon" class="wrapper">
+				<p>©2013 all rights reserved. </p>
+			</footer>
+		</div>
+		<script src="./js/bootstrap.js"></script>	
+	</body>
+</html>
